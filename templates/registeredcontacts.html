@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registered Contacts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<!-- nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" -->
+
+<body>
+    <nav class="navbar bg-dark border body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home">Developer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/registeredcontacts">R-CL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/unregisteredcontacts">UR-CL</a>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            <button class="btn btn-outline-primary mx-3" type='submit'><a href="/">Logout</a></button>
+        </div>
+    </nav>
+
+    <!-- For registered Contacts -->
+
+    <div class="container-fluid">
+        <div class="container mt-5 py-3">
+            <div class="container bg-light p-5">
+                <h2 class="container text-center">Here's your <b>Registered</b> Contacts</h2>
+                <hr class="my-4">
+                <div class="container my-3">
+                    <!-- <h2 class="text center py-3">Here is the List of your Tasks</h2> -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Contact</th>
+                                <th scope="col">Concern</th>
+                                <th scope="col">Update</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for j in rdata %}
+                            <tr>
+                                <th scope="col">{{j.id}}</th>
+                                <td>{{j.filled_at}}</td>
+                                <td>{{j.name}}</td>
+                                <td>{{j.email}}</td>
+                                <td>{{j.phone}}</td>
+                                <td>{{j.desc}}</td>
+                                <td>
+                                    <a href="{% url 'updateR' j.id %}" class="btn btn-success">Update</a>
+                                </td>
+                                <td>
+                                    <a href="{% url 'deleteR' j.id %}" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <!-- For Registered Contacts -->
+            <div class="container text">
+                <div class="container mt-5 py-3">
+                    <div class="container bg-light p-5 text-center">
+                        <p><b>For futher support: Contact Us</b></p>
+                        <p><a href="https://maps.google.com">Office no. 1008, Windsor technical Park</a></p>
+                        <p><a href="https://maps.google.com">Winchester Abbey Manchester United,</a></p>
+                        <p><a href="https://maps.google.com">Chicago Illinois, USA</a></p>
+                        <p>Contact: +91 2102108978, +11 230270987</p>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
