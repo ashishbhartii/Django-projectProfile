@@ -32,6 +32,8 @@ class signinData(models.Model):
     uname=models.CharField(max_length=15)
     email=models.EmailField()
     phone=models.CharField(max_length=10)
+    def __str__(self):
+        return self.uname
    
 class Name(models.Model):
     name = models.CharField(max_length=30)
