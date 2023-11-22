@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-
+# We are importing timezone function from the util package of django
 # Create your models here.
 class Contact(models.Model):
     name = models.CharField(max_length=30)
