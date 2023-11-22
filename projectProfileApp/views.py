@@ -24,7 +24,7 @@ def base(request):
 def explore(request):
     return render(request,'explore.html')
 
-@login_required(login_url="login")
+
 def signin(request):
     if request.method=='POST':
         fname=request.POST['fname']
