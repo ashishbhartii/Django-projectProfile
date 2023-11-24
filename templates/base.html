@@ -11,6 +11,7 @@
 <!-- nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark" -->
 
 <body>
+  <!-- Navigation Bar -->
   <nav class="navbar bg-dark border body navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Welcome To Developer's Profile</a>
@@ -33,16 +34,21 @@
       <br><br>
     </div>
   </nav>
-  <div class="container mt-3">
-    <h2>Welcome to the Developers Profile</h2>
-    <div class="container">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, iusto beatae! Deleniti, explicabo soluta
-        molestiae modi harum minus atque impedit delectus ex commodi eligendi vero similique quasi aperiam repellat
-        dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sit molestiae ratione corporis ipsa
-        dicta necessitatibus natus velit soluta minima eaque fugit dolore eveniet, dolores distinctio asperiores illum
-        quas officia!</p>
+  <!-- First Introductory para wrapped in Jumbotron -->
+  <div class="container bg-light p-5">
+    <h1 class="display-4 text-center my-3 py-3">Welcome to the <b>Developers</b> Profile</h1>
+    <div class="container mt-3">
+      <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, iusto beatae! Deleniti, explicabo soluta
+          molestiae modi harum minus atque impedit delectus ex commodi eligendi vero similique quasi aperiam repellat
+          dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt sit molestiae ratione corporis
+          ipsa
+          dicta necessitatibus natus velit soluta minima eaque fugit dolore eveniet, dolores distinctio asperiores illum
+          quas officia!</p>
+      </div>
     </div>
   </div>
+  <!-- Caraousel Block -->
   <div class="container-fluid mt-0 px-0">
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -69,34 +75,43 @@
       </button>
     </div>
   </div>
-  <div class="container my-3 py-3">
-    <h3>Our Previous works</h3>
+  <!-- Previous work paragraph wrapped in Jumbotron -->
+  <div class="container bg-light mt-3 p-5">
+    <h3 class="display-4 text-center my-3 py-3">Our Previous works</h3>
     <div class="container my-3 py-3">
-      <ul>
-        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse assumenda fugiat nostrum similique adipisci
-          distinctio necessitatibus ipsa officiis, quibusdam numquam fuga ducimus doloribus reprehenderit.
-          Exercitationem inventore harum neque quasi eius!</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed libero rerum vitae asperiores illum repellendus
-          magnam facilis exercitationem laudantium laboriosam, aut molestias ab ullam ratione temporibus rem dolorum
-          obcaecati a?</li>
-        <li>Link to our Previous built we site <a href="https:www.amazon.com">ashishProfile</a> has been Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Adipisci quos quo rerum fugit culpa inventore consequuntur optio
-          in impedit sapiente quae sit molestias, praesentium, consectetur velit tempore eos animi facere.</li>
-        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis. Doloribus, eaque nulla a id
-          excepturi qui explicabo soluta blanditiis corporis repudiandae nam nisi aliquam accusantium quos aspernatur,
-          neque alias!</li>
-      </ul>
+      <h3></h3>
+      <div class="container my-3 py-3">
+        <ul>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse assumenda fugiat nostrum similique adipisci
+            distinctio necessitatibus ipsa officiis, quibusdam numquam fuga ducimus doloribus reprehenderit.
+            Exercitationem inventore harum neque quasi eius!</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed libero rerum vitae asperiores illum
+            repellendus
+            magnam facilis exercitationem laudantium laboriosam, aut molestias ab ullam ratione temporibus rem dolorum
+            obcaecati a?</li>
+          <li>Link to our Previous built we site <a href="https:www.amazon.com">ashishProfile</a> has been Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Adipisci quos quo rerum fugit culpa inventore consequuntur
+            optio
+            in impedit sapiente quae sit molestias, praesentium, consectetur velit tempore eos animi facere.</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, facilis. Doloribus, eaque nulla a id
+            excepturi qui explicabo soluta blanditiis corporis repudiandae nam nisi aliquam accusantium quos aspernatur,
+            neque alias!</li>
+        </ul>
+      </div>
     </div>
   </div>
-  <div class="container bg-light p-5">
-    <h1 class="display-4">Some Additional Information</h1>
+
+  <!-- Jumbotron explore page with signin redirection -->
+  <div class="container bg-light mt-3 p-5">
+    <h1 class="display-4 text-center">Some Additional Information</h1>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nemo nihil asperiores eligendi
       molestiae exercitationem, assumenda laudantium quis est consequuntur odit optio a, tempora voluptates quisquam
       obcaecati. Iusto, beatae ducimus.</p>
     <hr class="my-4">
     <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Explore</a>
+    <a class="btn btn-primary btn-lg" href="/signin" role="button">Explore</a>
   </div>
+  <!-- Jumbotron explore page with signin redirection -->
   <div class="container mt-3">
     <h2 class="text-center my-3 py-3">Me at a Glance</h2>
     <div class="row">
@@ -107,7 +122,7 @@
             <h5 class="card-title">Technology</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn btn-primary">Explore Technology</a>
+            <a href="/signin" class="btn btn-primary">Explore Technology</a>
           </div>
         </div>
       </div>
@@ -118,7 +133,7 @@
             <h5 class="card-title">Galaxy</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn btn-primary">Explore Galaxy</a>
+            <a href="/signin" class="btn btn-primary">Explore Galaxy</a>
           </div>
         </div>
       </div>
@@ -129,39 +144,41 @@
             <h5 class="card-title">Planets</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
-            <a href="#" class="btn btn-primary">Explore Planets</a>
+            <a href="" class="btn btn-primary">Explore Planets</a>
           </div>
         </div>
       </div>
     </div>
 
   </div>
+  <!-- Some additional information wrapped in Jumbotron Block -->
   <div class="container my-3 py-3">
     <div class="container bg-light p-5">
-      <h1 class="display-4">Some Additional Information</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nemo nihil asperiores eligendi
-        molestiae exercitationem, assumenda laudantium quis est consequuntur odit optio a, tempora voluptates quisquam
-        obcaecati. Iusto, beatae ducimus.</p>
-      <hr class="my-4">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat doloremque laborum, sapiente numquam
-      exercitationem eaque fuga. Inventore consequatur, eveniet voluptates officia sit sunt amet asperiores harum, est
-      beatae atque.
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nemo fugiat enim quis officiis itaque quisquam
-        debitis! Praesentium aliquam, necessitatibus nisi labore architecto eveniet excepturi dolorum neque, totam aut
-        nam!</p>
-
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Explore</a>
+      <h1 class="display-4 text-center">Some Additional Information</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nemo nihil asperiores eligendi
+          molestiae exercitationem, assumenda laudantium quis est consequuntur odit optio a, tempora voluptates quisquam
+          obcaecati. Iusto, beatae ducimus.</p>
+          <hr class="my-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat doloremque laborum, sapiente numquam
+          exercitationem eaque fuga. Inventore consequatur, eveniet voluptates officia sit sunt amet asperiores harum, est
+          beatae atque.
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum nemo fugiat enim quis officiis itaque quisquam
+            debitis! Praesentium aliquam, necessitatibus nisi labore architecto eveniet excepturi dolorum neque, totam aut
+            nam!</p>
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="/signin" role="button">Explore</a>
     </div>
-    <div class="container my-3 py-3">
-      <div class="container">
-        <div class="container bg-light p-5 text-center">
+  </div>
+  <!-- contact area wrapped in a container -->
+  <div class="container my-3 py-3">
+    <div class="container">
+      <div class="container bg-light p-5 text-center">
           <p><b>For futher support: Contact Us</b></p>
           <p><a href="https://maps.google.com">Office no. 1008, Windsor technical Park</a></p>
           <p><a href="https://maps.google.com">Winchester Abbey Manchester United,</a></p>
           <p><a href="https://maps.google.com">Chicago Illinois, USA</a></p>
           <p>Contact: +91 2102108978, +11 230270987</p>
-        </div>
+      </div>
         <div class="container my-3 py-3">
           <p>New to Project Profile ? <button class="btn btn-outline-success mx-2" type="submit"><a class="nav-link"
                 href="/signin">SignIn</a></button></p>
@@ -170,9 +187,9 @@
         </div>
       </div>
     </div>
-    
-    <footer class="text-center text-light bg-dark">Learning Django with Ashish || All rights reserved</footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+
+  <footer class="text-center text-light bg-dark">Learning Django with Ashish || All rights reserved</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"></script>
 </body>
